@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+
+#mytable { 
+    width: 100%; 
+    padding: 0; 
+    margin: 0; } 
+caption { 
+    padding: 0 0 5px 0; 
+    width: 700px;      
+    font: italic 16px "Helvetica Neue", Helvetica, Arial, "微軟正黑體", "微软雅黑", "メイリオ", "맑은 고딕", sans-serif; 
+    text-align: right; 
+	} 
+	
+th { 
+    font: bold 16px "Helvetica Neue", Helvetica, Arial, "微軟正黑體", "微软雅黑", "メイリオ", "맑은 고딕", sans-serif; 
+    color: #fff; 
+    border-right: 1px solid #ad9f6f; 
+    border-bottom: 1px solid #ad9f6f7; 
+    border-top: 1px solid #ad9f6f; 
+    letter-spacing: 2px; 
+    text-transform: uppercase; 
+    text-align:center;
+    padding: 6px 6px 6px 12px; 
+    background: #8d772e; 
+	} 
+	
+th.nobg { 
+    border-top: 0; 
+    border-left: 0; 
+   
+    background: none; 
+	} 
+	
+td { 
+   
+    border-bottom: 1px solid #ad9f6f; 
+    background: #fff; 
+    font-size:16px; 
+    padding: 1.5%; 
+    color: #000; 
+	} 
+
+td a:link {
+	color:#333;
+	}
+
+td a:visited {
+	color:#333;
+	}
+	
+td a:hover {
+	color:#F00;
+	}
+	
+tr.alt td{ 
+    background: #fff7dd; 
+    color:#333;
+	}
+
+tr.spec td{ 
+    background: #fff; 
+    color:#333;
+	}  
+
+.set_t {
+	text-align:center;
+
+	}
+
+.set_c a {
+	margin:9px 0;
+	float:left;
+	}
+	
+th.spec { 
+    border-left: 1px solid #ad9f6f; 
+    border-top: 0; 
+    background: #fff; 
+    font: bold 10px "Helvetica Neue", Helvetica, Arial, "微軟正黑體", "微软雅黑", "メイリオ", "맑은 고딕", sans-serif;
+    } 
+	
+th.specalt { 
+    border-left: 1px solid #ad9f6f; 
+    border-top: 0; 
+    background: #f5fafa; 
+    font: bold 10px "Helvetica Neue", Helvetica, Arial, "微軟正黑體", "微软雅黑", "メイリオ", "맑은 고딕", sans-serif;
+    color: #797268; 
+	} 
+	
+	
+html>body td {
+     font-size:15px; 
+	 } 
+
+
+@media only screen and (max-width: 1024px) { 
+    .set_t {
+	text-align:center;
+	padding:0 13px;
+	}
+   
+}

@@ -1,0 +1,261 @@
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: "Helvetica Neue", Helvetica, Arial, "微軟正黑體","Microsoft YaHei", "微软雅黑", "メイリオ", "맑은 고딕", sans-serif,STHeiti,SimSun;
+	src:url('../fonts/feathericons/feathericons.eot?-8is7zf');
+	src:url('../fonts/feathericons/feathericons.eot?#iefix-8is7zf') format('embedded-opentype'),
+		url('../fonts/feathericons/feathericons.woff?-8is7zf') format('woff'),
+		url('../fonts/feathericons/feathericons.ttf?-8is7zf') format('truetype'),
+		url('../fonts/feathericons/feathericons.svg?-8is7zf#feathericons') format('svg');
+}
+
+*, *:after, *:before { border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+.grid {
+	overflow: hidden;
+	margin: 0;
+	padding: 0 0 0 0;
+	width: 100%;
+	list-style: none;
+	text-align: center;
+	
+}
+
+/* Common style */
+.grid figure {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	margin: 0;
+	width: 95%;
+	height:219px;
+	background: #000;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 0 0 0 0;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.figcaption h2 {
+	z-index:99999;
+	}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure a {
+	z-index: 5;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	
+	font-weight: 300;
+}
+
+
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+
+/* Individual effects */
+
+/*---------------*/
+/***** Chico *****/
+/*---------------*/
+
+figure.effect-chico img {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(1.12);
+	transform: scale(1.12);
+}
+
+figure.effect-chico:hover img {
+	opacity: 0.5;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-chico figcaption {
+	padding: 3em;
+}
+
+figure.effect-chico figcaption::before {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	border: 1px solid #fff;
+	content: '';
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+figure.effect-chico figcaption::before,
+figure.effect-chico p {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-chico h2 {
+	padding: 20% 0 20px 0;
+}
+
+figure.effect-chico p {
+	margin: 0 auto;
+	max-width: 200px;
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+figure.effect-chico:hover figcaption::before,
+figure.effect-chico:hover p {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+
+.preferential {
+	width:55%;
+	margin:0px auto;
+	padding:20px 0 0 0;
+	}
+
+.choice {
+	width:24.5%;
+	float:left;
+	padding:10px 0 0 0;
+	
+	}
+
+.choice img {
+	width:100%;
+	}
+
+@media screen and (max-width: 103.75em) { 
+   .preferential {
+		width:65%;
+	    }
+}
+
+@media screen and (max-width: 90em) { 
+   .preferential {
+		width:70%;
+	    }
+}
+
+@media screen and (max-width: 85.375em) { 
+   .preferential {
+		width:75%;
+	    }
+}
+
+@media screen and (max-width: 80em) { 
+   .preferential {
+		width:80%;
+	    }
+}
+
+@media screen and (max-width: 71em) { 
+   .preferential {
+		width:90%;
+	    }
+}
+
+
+@media screen and (max-width: 69.5em) {
+	.grid figure {
+		width: 50%;
+	}	
+
+	.grid figure figcaption {
+		font-size: 90%;
+	}
+}
+
+
+@media screen and (max-width: 64em) { 
+   
+   .grid figure {
+		width: 95%;
+	}
+	
+   .preferential {
+		width:100%;
+		margin:0 0 0 10px;
+	    }
+}
+
+
+@media screen and (max-width: 50em) {
+	
+	.grid figure {
+		width: 95%;
+	}
+	
+	.grid figure figcaption {
+	
+	font-size: 0.7em;
+    }
+	
+}
+
+
+@media screen and (max-width: 48em) { 
+    .grid figure {
+		width: 100%;
+	}
+	
+	.preferential {
+		float:left;
+		width:95%;
+		}
+		
+    .choice {
+		width:100%;
+		padding:0 0 0 0;
+		float:left;
+		}
+}
+
+

@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+
+.content {
+	padding:130px 0 4.5% 0;
+	overflow-x:hidden;
+	overflow-y:auto;
+	z-index:1;
+	}
+
+
+
+.slider01 {
+	width:100%;
+	background: url(../img/index_01.jpg); 
+	background-position: center;
+	}
+
+.slider02 {
+	width:100%;
+	background: url(../img/index_02.jpg); 
+	background-position: center;
+	}
+
+.slider03 {
+	width:100%;
+	background: url(../img/index_03.jpg); 
+	background-position: center;
+	}
+
+.slider04 {
+	width:100%;
+	background: url(../img/index_04.jpg); 
+	background-position: center;
+	}
+
+.slider05 {
+	width:100%;
+	background: url(../img/index_05.jpg); 
+	background-position: center;
+	}
+
+
+
+@media screen and (max-width: 50em) {
+	.content {
+	    padding:42px 0 4.5% 0;
+	    } 
+		
+}

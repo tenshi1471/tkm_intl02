@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+.title {
+	width:100%;
+	color:#000;
+	margin:20px 0 0 10px;
+	padding: 10px 10px 20px 10px;
+	}
+
+
+
+.title li {
+	width:100%;
+	
+	}
+
+.title h2 {
+	font-size:1.8em;
+	}
+
+.title p {
+	color:#a5a5a5;
+	font-size:11px;
+	margin:10px 0 0 0;
+	}
+
+.title p a {
+	color:#666;
+	font-size:11px;
+	}
+
+.title p a:link {
+	color:#666;
+	}
+
+.title p a:visited {
+	color:#666;
+	}
+
+.title p a:hover {
+	color:#b7b7b7;
+	}

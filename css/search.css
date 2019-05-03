@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+
+.search_bar {
+	width:45%;
+	height: 40px;
+	margin:-25px auto 30px auto;
+	}
+
+.cf:before, .cf:after{
+  content:"";
+  display:table;
+  }
+
+.cf:after{
+  clear:both;
+  }
+
+.cf{
+  zoom:1;
+  }
+
+
+.search_bar table, th, td {
+    border: 0px solid black;
+	padding:1%;
+}
+
+/*-------------------------------------*/	
+
+.form-wrapper {
+	width: 100%;
+	padding: 15px;
+	
+    }
+
+.form-wrapper input {
+	width: 75%;
+	height: 40px;
+	padding: 10px 5px;
+	float: left;    
+	font: bold 15px "Helvetica Neue", Helvetica, Arial, "微軟正黑體","Microsoft YaHei", "微软雅黑", "メイリオ", "맑은 고딕", sans-serif,STHeiti,SimSun;
+	background:#f0f0f0;
+	-moz-border-radius: 3px 0 0 3px;
+	-webkit-border-radius: 3px 0 0 3px;
+	border-radius: 1px 0 0 1px;      
+    }
+
+.form-wrapper input:focus {
+	outline: 0;
+	background: #fff;
+	-moz-box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+	-webkit-box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+	box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+    }
+
+.form-wrapper input::-webkit-input-placeholder {
+   color: #bebebe;
+   font-weight: normal;
+   font-style: italic;
+   }
+
+.form-wrapper input:-moz-placeholder {
+	color: #bebebe;
+	font-weight: normal;
+	font-style: italic;
+   }
+
+.form-wrapper input:-ms-input-placeholder {
+	color: #bebebe;
+	font-weight: normal;
+	font-style: italic;
+   }    
+
+.form-wrapper button {
+	overflow: visible;
+	position: relative;
+	float: right;
+	border: 0;
+	padding: 0;
+	cursor: pointer;
+	height: 40px;
+	width: 25%;
+	font: bold 15px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+	color: #fff;
+	text-transform: uppercase;
+	background: #d83c3c;
+	-moz-border-radius: 0 3px 3px 0;
+	-webkit-border-radius: 0 3px 3px 0;
+	border-radius: 0 3px 3px 0;      
+	text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+    }
+
+.form-wrapper button a:link {
+	color:#FFF;
+    }
+
+.form-wrapper button a:visited {
+	color:#e0e0e0;
+    }
+
+.form-wrapper button a:hover {
+	color:#e0e0e0;
+    }
+
+
+
+  
+@media screen and (max-width: 50em) { 
+   .search_bar {
+	   width:100%;
+	   margin:-10px 0 35px 0;
+	   float:left;
+	
+   }
+} 

@@ -1,0 +1,51 @@
+/*! Bagpakk v1.0.0b | Constantin Saguin csag.co | MIT License | github.com/brutaldesign/bagpakk */
+
+
+
+.button-big{
+ cursor:pointer;outline:0!important;
+ position:relative;
+ opacity:1!important;
+ line-height:1!important;
+ font-style:normal!important;
+ vertical-align:middle;
+ text-shadow:none!important;
+ font-family: "Helvetica Neue", Helvetica, Arial, "微軟正黑體", "微软雅黑", "メイリオ", "맑은 고딕", sans-serif;
+ text-align:center;
+ font-weight:700!important;
+ text-decoration:none!important;
+ display:inline-block;
+ letter-spacing:0;
+ color:#fff!important;
+ border:none!important;
+ background-image:none;
+ background-color:#0bbae0; /*按鈕*/
+ -webkit-border-radius:4px;
+ border-radius:4px;
+ width:100%;
+ text-align:center;
+ box-shadow:0 3px 0 #0184a0; /*按鈕陰影*/
+ top:-3px
+ }
+ 
+
+ 
+.button-big:hover{
+ top:0px;
+ box-shadow:0 3px 0 #0184a0; /*按鈕陰影*/
+ }
+ 
+ 
+.button-big:active,.button-big:focus{
+ top:3px;box-shadow:0 0 0 #fff;
+ }
+
+
+   
+.button-alt-big,.button-alt-light-big,.button-big{
+  padding:8px 20px; /*按鈕高度*/
+  font-size:1.2em;
+  margin:0px auto;
+  }
+ 
+ 

@@ -1,0 +1,144 @@
+
+#cont {
+	width:100%;
+	height:450px;
+	float:left;
+	margin:0 0 15px 0;
+	}
+
+.slider {
+  width: 100%;
+  position: relative;
+  height: 40vh;
+  overflow: hidden;
+}
+
+.slider .slider-container {
+  position: absolute;
+  display: flex;
+  left: -100%;
+  height: 100%;
+}
+
+.slider .slider-container.slider-cursor {
+  cursor: ew-resize;
+}
+
+.slider .slider-container > div {
+  height: 100%;
+  float: left;
+  flex-shrink: 0;
+}
+
+.slider .slider-button-left, .slider .slider-button-right {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 30px;
+  top: 0;
+  opacity: 0;
+  /*z-index:1;*/
+  text-align: center;
+  background: rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+
+.slider .slider-button-left span, .slider .slider-button-right span {
+  transition: all .2s ease-in-out;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+}
+
+.slider .slider-button-left:hover, .slider .slider-button-right:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.slider .slider-button-left:hover span, .slider .slider-button-right:hover span {
+  color: rgba(255, 255, 255, 0.7);
+
+}
+
+.slider:hover .slider-button-left, .slider:hover .slider-button-right {
+  opacity: 1;
+}
+
+.slider .slider-button-left {
+  left: 0;
+}
+
+.slider .slider-button-right {
+  right: 0;
+}
+
+.slider ul.slider-bullets {
+  position: absolute;
+  bottom: 7px;
+  left: 50%;
+  transform: translate(-50%);
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: .2s all ease-in-out;
+}
+
+.slider ul.slider-bullets li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin: 0px 3px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: .2s all ease-in-out;
+}
+
+.slider ul.slider-bullets li:hover {
+  opacity: 1;
+}
+
+.slider ul.slider-bullets li.current {
+  border-color: #fff;
+}
+
+.slider ul.slider-bullets li.current::before {
+  background: #fff;
+}
+
+.slider ul.slider-bullets li::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #000;
+  transition: .2s all ease-in-out;
+}
+
+.slider:hover ul.slider-bullets {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 800px) {
+	#cont {
+	height:250px;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+  .slider {
+    width: 100vw;
+    height: 40vh;
+    padding: 0;
+    margin: 0;
+  }
+  .slider-navigation {
+    display: none;
+  }
+}

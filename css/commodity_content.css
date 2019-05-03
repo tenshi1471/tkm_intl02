@@ -1,0 +1,328 @@
+@charset "utf-8";
+/* CSS Document */
+
+.content {
+	width:1000px;
+	min-height:200px;
+	margin:140px auto 0px auto;
+	}
+
+.content h2 {
+	font-size:1.6em;
+	}
+
+.commodity_menu ul li {
+	display:inline;
+	float:left;
+	}
+
+.commodity_menu ul {
+	width:100%;
+	margin:5px 0;
+	float:left;
+	}
+
+
+.commodity_menu li {
+	width:321px;
+	height:81px;
+	background-color:#9a8c57;
+	margin:0 5px;
+    }
+
+.commodity_menu  li  select  {
+	position:absolute;
+	margin:48px 0 0 140px;
+	z-index:2;
+	}
+
+
+
+
+
+.commodity_menu  li  img {
+	position:relative;
+	z-index:1;
+	}
+
+.ad {
+	width:100%;
+	margin:5px 0;
+	float:left;
+	}
+
+.title_s {
+	width:100%;
+	float:left;
+	font-size:0.7em;
+
+	color:#999;
+	margin:0 0 20px 0;
+	padding:0 10px 0 0;
+	line-height:15px;
+	} 
+
+.title_s ul li {
+	display:inline;
+	color:#999;
+	}
+
+.title_s li a:link {
+	color:#999;
+	}
+
+.title_s li a:visited {
+	color:#999;
+	}
+
+.title_s li a:hover {
+	color:#9a8c57;
+	}
+
+.title_b {
+	text-align:center;
+	color:#333;
+	margin:0 0 3% 0 ;
+	}
+
+.region {
+	width:100%;
+	height:50px;
+	text-align:center;
+	margin:-15px 0 15px 0;
+
+	}
+
+.region select {
+	width:450px;
+	height:50px;
+	border:1px solid #999;
+	font-size:1.2em;
+	color:#666;
+	}
+
+.region02 {
+	width:100%;
+	height:50px;
+	text-align:center;
+	margin:-15px 0 15px 0;
+	display:none;
+	}
+
+.region02 select {
+	width:450px;
+	height:50px;
+	border:1px solid #999;
+	font-size:1.2em;
+	color:#666;
+	}
+
+	
+/*關於惟中*/
+
+.about_h2 {
+	font-size:0.95em;
+	line-height:1.8em;
+	margin:0 0 4% 0;
+	padding:0 2%;
+	}
+
+.about_text {
+	float:left;
+	margin:0 0 4% 0;
+	}
+
+.about_img {
+	width:34.5%;
+	float:left;
+	margin:9px 0 0 0;
+	padding:0 2%;
+	}
+
+.about_img img {
+	width:100%;
+	}
+
+.about_img ul {
+	margin:10px 0 0 0;
+	text-align: center;
+	}
+
+.about_img ul li a:link {
+	color:#ff0000;
+	} 
+
+.about_img ul li a:visited {
+	color:#ff0000;
+	} 
+
+.about_img ul li a:hover {
+	color:#000;
+	} 
+
+.about_text02 {
+	float:left;
+	margin:0 0 4% 0;
+	}
+
+.about_text02 iframe {
+	margin:0px auto;
+	}
+
+.about_type {
+	width:65%;
+	float:right;
+	font-size:0.95em;
+	line-height:1.8em;
+	padding:0 2%;
+	}
+
+.about_type h2 {
+	font-size:1em;
+	}
+
+.about_type p {
+	font-size:0.95em;
+	line-height:1.8em;
+	}
+
+
+.red {
+	color:#F00;
+	}
+
+.moon_festival {
+	width:65%;
+	float:right;
+	font-size:0.95em;
+	line-height:1.8em;
+	padding:0 2%;
+}
+
+.moon_festival h2 {
+	font-size:1em;
+	}
+
+.moon_festival li {
+	   list-style-type:lower-roman;
+}
+
+
+
+#contact-form button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#991D57;
+	background-image:linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
+	background-image:-moz-linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
+	background-image:-webkit-linear-gradient(bottom, #8C1C50 0%, #991D57 52%);
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	border-radius:5px;
+}
+#contact-form button[type="submit"]:hover {
+	background-image:linear-gradient(bottom, #9C215A 0%, #A82767 52%);
+	background-image:-moz-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
+	background-image:-webkit-linear-gradient(bottom, #9C215A 0%, #A82767 52%);
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+#contact-form button[type="submit"]:active {
+	box-shadow:inset 0 1px 3px rgba(0,0,0,0.5);
+}
+
+
+.message {
+	width:100%;
+	list-style: none;
+	padding:0 0 80px 0;
+	margin:0 0 0 0;
+	float:left;
+	text-align:center;
+	
+}
+
+
+@media screen and (max-width: 800px) { 
+
+.content {
+	width:100%;
+	margin:0px auto 0px auto;
+	}
+
+.commodity_menu {
+	display:none;
+	}
+
+.ad {
+	display:none;
+	}
+
+.grid {
+	float:left;
+	}
+
+.title_s {
+    width:100%;
+	float:left;
+	font-size:0.8em;
+	color:#333;
+	margin:50px 0 0 20px;
+	text-align:left;
+	
+	}
+
+.title_b {
+	width:100%;
+	float:left;
+	font-size:1em;
+	text-align:left;
+	color:#333;
+	margin:0 0 2% 20px;
+	}
+
+.region {
+	margin:10px 0 30px 0;
+	padding:0 10px;
+	float:left;
+   }
+  
+.region select {
+	width:100%;
+	height:50px;
+	padding:0 0 0 5px;
+	}
+
+.region02 {
+	margin:10px 0 30px 0;
+	padding:0 10px;
+	float:left;
+	display:block;
+   }
+  
+.region02 select {
+	width:100%;
+	height:50px;
+	padding:0 0 0 5px;
+	}
+
+}
+
+@media screen and (max-width: 640px) { 
+    .about_img {
+	width:100%;
+    } 
+    .about_type {
+	width:100%;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) { 
+.title_b samp {
+	display:none;
+	}
